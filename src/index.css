@@ -5,11 +5,16 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-color: #ffffff;
+  background-color: var(--white);
   font-family: "Bebas Neue", "Lato", sans-serif;
 }
 * {
   box-sizing: border-box;
+}
+:root {
+  --white: #fff;
+  --red: #bf2222;
+  --dark_brownie: #3d2514;
 }
 ul {
   list-style: none;
@@ -27,6 +32,7 @@ input {
 }
 .logo img {
   width: 120px;
+  cursor: pointer;
 }
 #main {
   width: 100%;
@@ -50,7 +56,7 @@ nav {
 }
 nav.active {
   box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.157);
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 nav ul {
   display: flex;
@@ -65,16 +71,17 @@ nav ul li a {
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 500;
-  color: #3d2514;
+  color: var(--dark_brownie);
   letter-spacing: 1px;
   border-radius: 3px;
   transition: 0.2s ease-in-out;
 }
 nav ul li a:hover {
-  background-color: #bf2222;
-  color: #ffffff;
+  background-color: var(--red);
+  color: var(--white);
   box-shadow: 5px 10px 30px rgba(255, 2, 2, 0.336);
   transition: all ease 0.2s;
+  cursor: pointer;
 }
 nav .menu-btn,
 .menu-icon {
@@ -91,8 +98,8 @@ nav .menu-btn,
 }
 .header-heading span {
   font-family: "Alfa Slab One";
-  color: #bf2222;
-  border-bottom: 2px solid #3d2514;
+  color: var(--red);
+  border-bottom: 2px solid var(--dark_brownie);
 }
 .header-heading .details {
   font-size: 23px;
@@ -103,14 +110,16 @@ nav .menu-btn,
   font-size: 1.6rem;
   margin: 0px;
   letter-spacing: 2px;
-  color: #3d2514;
+  color: var(--dark_brownie);
+  text-transform: capitalize;
 }
 .header-heading h1 {
   font-family: "Alfa Slab One";
   font-size: 4rem;
   margin: 0px;
   letter-spacing: 2px;
-  color: #3d2514;
+  color: var(--dark_brownie);
+  text-transform: uppercase;
 }
 .header-btns {
   display: flex;
@@ -124,16 +133,16 @@ nav .menu-btn,
   align-items: center;
   font-size: 1.4rem;
   font-family: "Lato";
-  background-color: #bf2222;
+  background-color: var(--red);
   box-shadow: 5px 10px 30px rgba(255, 2, 2, 0.336);
   border-radius: 5px;
-  color: #ffffff;
+  color: var(--white);
 }
 .header-btn:hover {
   background-color: transparent;
   transition: all ease 0.5s;
-  color: #3d2514;
-  border: 2px solid #bf2222;
+  color: var(--dark_brownie);
+  border: 2px solid var(--red);
 }
 
 #products {
@@ -146,18 +155,19 @@ nav .menu-btn,
   align-items: center;
   justify-content: center;
   padding-top: 40px;
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 #products h1 {
   font-family: "Alfa Slab One";
   letter-spacing: 2px;
-  color: #3d2514;
+  color: var(--dark_brownie);
   font-size: 3rem;
+  text-transform: uppercase;
 }
 #products p {
   font-family: "Bebas Neue";
   letter-spacing: 1px;
-  color: #3d2514;
+  color: var(--dark_brownie);
   font-size: 0.8rem;
   margin-top: -15px;
   margin-bottom: 35px;
@@ -168,7 +178,7 @@ nav .menu-btn,
   align-content: center;
 }
 .a-box {
-  background-color: #ffffff;
+  background-color: var(--white);
   width: 300px;
   height: 435px;
   margin: 20px;
@@ -193,7 +203,7 @@ nav .menu-btn,
 .a-b-text {
   width: 100%;
   height: 40%;
-  background-color: #ffffff;
+  background-color: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,7 +211,7 @@ nav .menu-btn,
   flex-direction: column;
 }
 .a-b-text h2 {
-  color: #3d2514;
+  color: var(--dark_brownie);
 }
 .productbox-button {
   width: 120px;
@@ -214,13 +224,13 @@ nav .menu-btn,
   background-color: #bf2222;
   box-shadow: 5px 10px 30px rgba(255, 103, 2, 0.336);
   border-radius: 5px;
-  color: #ffffff;
+  color: var(--white);
 }
 .productbox-button:hover {
   background-color: transparent;
   transition: all ease 0.5s;
-  color: #3d2514;
-  border: 2px solid #3d2514;
+  color: var(--dark_brownie);
+  border: 2px solid var(--dark_brownie);
 }
 #about {
   margin-top: 100px;
@@ -237,12 +247,12 @@ nav .menu-btn,
 
 .about-text {
   width: 45%;
-  color: #fff;
+  color: var(--white);
   text-align: left;
 }
 .about-text h1 {
   font-size: 3.5rem;
-  color: #3d2514;
+  color: var(--dark_brownie);
   font-weight: 500;
   margin: 0px;
   padding: 0px;
@@ -266,13 +276,13 @@ nav .menu-btn,
   background-color: #bf2222;
   box-shadow: 5px 10px 30px rgba(255, 103, 2, 0.336);
   border-radius: 5px;
-  color: #ffffff;
+  color: var(--white);
 }
 .about-text button:hover {
   background-color: transparent;
   transition: all ease 0.5s;
-  color: #3d2514;
-  border: 2px solid #3d2514;
+  color: var(--dark_brownie);
+  border: 2px solid var(--dark_brownie);
 }
 .about-image {
   width: 50%;
@@ -292,7 +302,7 @@ nav .menu-btn,
 }
 #contact h1 {
   font-size: 3.5rem;
-  color: #3d2514;
+  color: var(--dark_brownie);
   font-weight: 500;
   margin: 0px;
   padding: 0px;
@@ -316,7 +326,7 @@ nav .menu-btn,
   border: none;
   outline: none;
   background-color: #110c09;
-  color: #ffffff;
+  color: var(--white);
   border-radius: 5px;
 }
 #contact form textarea {
@@ -325,7 +335,7 @@ nav .menu-btn,
 #contact form input[type="submit"] {
   height: 45px;
   background: linear-gradient(90deg, #bf2222 20%, #bf2222);
-  color: #ffffff;
+  color: var(--white);
   text-transform: uppercase;
 }
 @media (max-width: 620px) {
@@ -466,7 +476,7 @@ nav .menu-btn,
     position: absolute;
     top: 65px;
     left: 0px;
-    background-color: #ffffff;
+    background-color: var(--white);
     border-bottom: 4px solid #ff1414;
     width: 100%;
     padding: 0px;
@@ -492,7 +502,7 @@ nav .menu-btn,
     user-select: none;
   }
   nav .menu-icon .nav-icon {
-    background-color: #3d2514;
+    background-color: var(--dark_brownie);
     display: block;
     height: 2px;
     position: relative;
@@ -511,11 +521,11 @@ nav .menu-btn,
   }
   nav .menu-icon .nav-icon:before {
     top: 6px;
-    background-color: #3d2514;
+    background-color: var(--dark_brownie);
   }
   nav .menu-icon .nav-icon:after {
     top: -6px;
-    background-color: #3d2514;
+    background-color: var(--dark_brownie);
   }
   nav .menu-btn:checked ~ .menu-icon .nav-icon {
     background: transparent;
@@ -523,12 +533,12 @@ nav .menu-btn,
   nav .menu-btn:checked ~ .menu-icon .nav-icon:before {
     transform: rotate(-45deg);
     top: 0;
-    background-color: #3d2514;
+    background-color: var(--dark_brownie);
   }
   nav .menu-btn:checked ~ .menu-icon .nav-icon:after {
     transform: rotate(45deg);
     top: 0;
-    background-color: #3d2514;
+    background-color: var(--dark_brownie);
   }
   nav .menu-btn {
     display: none;

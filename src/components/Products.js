@@ -11,7 +11,7 @@ const Products = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Non molestias,
         necessitatibus numquam reiciendis recusandae dolore dolor.
       </p>
-      <div className="a-container">
+      <div className="a-box">
         <Productbox image={pimage1} title="Luger Burger" />
         <Productbox image={pimage2} title="Le Pigeon Burger" />
         <Productbox image={pimage1} title="Luger Burger" />

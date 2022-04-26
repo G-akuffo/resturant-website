@@ -12,9 +12,9 @@ const About = () => {
           numquam quibusdam est iusto hic vel rem.
         </p>
         <button>Read More</button>
-        <div className="about-image">
-            <img src={aboutimage} alt="" />
-        </div>
+      </div>
+      <div className="about-image">
+        <img src={aboutimage} alt="" />
       </div>
     </div>
   );
